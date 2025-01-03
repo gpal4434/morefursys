@@ -100,7 +100,7 @@ button {
 }
 
 html {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 html,
@@ -198,3 +198,6 @@ h6 {
 a {
   text-decoration: none;
 } /*# sourceMappingURL=reset.css.map */
+img {
+  max-width: 100%;
+}

@@ -10,43 +10,61 @@
     <title>ESIMFARM</title>
   </head>
   <body>
-    <header>
-      <div class="inner">
-        <div>Fursysmore</div>
-        <nav class="nav">
-          <a href="#" class="link on">핫딜</a>
-          <a href="#" class="link">공지사항</a>
-          <a href="#" class="link">이용방법</a>
-          <a href="#" class="link">고객센터</a>
-        </nav>
-        <div class="btn-box">
-          <button>로그인</button>
-          <button class="sign-up">회원가입</button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- 메인 배너 -->
-      <article class="swiper main-banner">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide01">
-            <div class="banner banner01">
-              <div class="lt">
-                <h3>
-                  새롭게 달라진<br /><span class="b">퍼니시스</span> 사이트!
-                </h3>
-                <h5>
-                  새로워진 퍼니시스에서 간편한 회원가입 서비스를 경험해 보세요.
-                </h5>
-              </div>
-              <div class="rt">
-                <img src="/assets/images/banner01.png" alt="퍼니시스 사이트" />
+    <div id="wrap">
+      <header class="header">
+        <div class="header-inner">
+          <button class="menu mobile"></button>
+          <a href="/" class="logo">
+            <img src="../assets/images/logo.png" alt="logo" />
+          </a>
+          <nav>
+            <div class="intro mobile">
+              <p>안녕하세요!<br />상품권 최고 매입 퍼시스모어입니다.</p>
+
+              <div class="btn-box mobile flex">
+                <button>로그인</button>
+                <button class="sign-up">회원가입</button>
               </div>
             </div>
+            <ul class="nav-list">
+              <li data-href="/html/hotDeal.html">
+                <span>핫딜</span>
+              </li>
+              <li data-href="/html/notice.html">
+                <span>공지사항</span>
+              </li>
+              <li data-href="/html/status.html">
+                <span>실시간 매입 현황</span>
+              </li>
+              <li data-href="/html/customer.html"><span>고객센터</span></li>
+            </ul>
+            <footer class="mobile">
+              <div class="inner">
+                <div class="lt">
+                  <div class="contact-info">
+                    <span>010-1234-1233</span>
+                    <span>상담 가능 시간 AM 09:00 ~ PM 11:00</span>
+                  </div>
+                  <span class="text-gray"
+                    >COPYRIGHT ⓒ 퍼시스모어.ALL RIGHTS RESERVED.</span
+                  >
+                </div>
+              </div>
+            </footer>
+          </nav>
+          <div class="btn-box pc flex">
+            <button>로그인</button>
+            <button class="sign-up">회원가입</button>
           </div>
-          <div class="swiper-slide">
-            <div class="banner banner01">
-              <div class="inner flex">
+        </div>
+      </header>
+
+      <main>
+        <!-- 메인 배너 -->
+        <article class="swiper main-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide01">
+              <div class="banner banner01">
                 <div class="lt">
                   <h3>
                     새롭게 달라진<br /><span class="b">퍼니시스</span> 사이트!
@@ -64,360 +82,446 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </article>
-      <!-- 공지사항 -->
-      <article>
-        <div class="notice-container">
-          <div class="inner">
-            <div class="visual-container">
-              <div class="box">
-                <img
-                  src="/assets/images/notice.png"
-                  alt="notice"
-                  width="38"
-                  height="38"
-                />
-                <span>공지사항</span>
-                <button>MORE</button>
+            <div class="swiper-slide">
+              <div class="banner banner01">
+                <div class="inner flex">
+                  <div class="lt">
+                    <h3>
+                      새롭게 달라진<br /><span class="b">퍼니시스</span> 사이트!
+                    </h3>
+                    <h5>
+                      새로워진 퍼니시스에서 간편한 회원가입 서비스를 경험해
+                      보세요.
+                    </h5>
+                  </div>
+                  <div class="rt">
+                    <img
+                      src="/assets/images/banner01.png"
+                      alt="퍼니시스 사이트"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="contents-container">
-              <div class="box">
-                <div class="swiper notice">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="notice-item notice01">
-                        <div class="subject">
-                          <div class="b">
-                            서비스 이용약관 개정 안내서비스 이용약관 개정 안내
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </article>
+        <!-- 공지사항 -->
+        <article>
+          <div class="notice-container">
+            <div class="inner">
+              <div class="visual-container">
+                <div class="box">
+                  <img
+                    src="/assets/images/notice.png"
+                    alt="notice"
+                    width="38"
+                    height="38"
+                  />
+                  <span>공지사항</span>
+                  <button>MORE</button>
+                </div>
+              </div>
+              <div class="contents-container">
+                <div class="box">
+                  <div class="swiper notice">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="notice-item notice01">
+                          <div class="subject">
+                            <div class="b">
+                              서비스 이용약관 개정 안내서비스 이용약관 개정 안내
+                            </div>
+                            <span class="new">new</span>
                           </div>
-                          <span class="new">new</span>
+                          <div class="cont">
+                            안녕하세요. 공지사항 내용이 보입니다. 두줄까지
+                            보이고 그 다음은 줄어요안녕하세요.
+                            공지사항안녕하세요. 공지사항안녕하세요. 공지사항
+                          </div>
+                          <div class="date">2024.12.05</div>
                         </div>
-                        <div class="cont">
-                          안녕하세요. 공지사항 내용이 보입니다. 두줄까지 보이고
-                          그 다음은 줄어요안녕하세요. 공지사항안녕하세요.
-                          공지사항안녕하세요. 공지사항
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="notice-item notice02">
+                          <div class="b">서비스 이용약관 개정 안내</div>
+                          <div class="cont">
+                            안녕하세요. 공지사항 내용이 보입니다. 두줄까지
+                            보이고 그 다음은 줄어요
+                          </div>
+                          <div class="date">2024.12.05</div>
                         </div>
-                        <div class="date">2024.12.05</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="notice-item notice03">
+                          <div class="b">서비스 이용약관 개정 안내</div>
+                          <div class="cont">
+                            안녕하세요. 공지사항 내용이 보입니다. 두줄까지
+                            보이고 그 다음은 줄어요
+                          </div>
+                          <div class="date">2024.12.05</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="notice-item notice03">
+                          <div class="b">서비스 이용약관 개정 안내</div>
+                          <div class="cont">
+                            안녕하세요. 공지사항 내용이 보입니다. 두줄까지
+                            보이고 그 다음은 줄어요
+                          </div>
+                          <div class="date">2024.12.05</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="notice-item notice03">
+                          <div class="b">서비스 이용약관 개정 안내</div>
+                          <div class="cont">
+                            안녕하세요. 공지사항 내용이 보입니다. 두줄까지
+                            보이고 그 다음은 줄어요
+                          </div>
+                          <div class="date">2024.12.05</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="notice-item notice03">
+                          <div class="b">서비스 이용약관 개정 안내</div>
+                          <div class="cont">
+                            안녕하세요. 공지사항 내용이 보입니다. 두줄까지
+                            보이고 그 다음은 줄어요
+                          </div>
+                          <div class="date">2024.12.05</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="notice-item notice03">
+                          <div class="b">서비스 이용약관 개정 안내</div>
+                          <div class="cont">
+                            안녕하세요. 공지사항 내용이 보입니다. 두줄까지
+                            보이고 그 다음은 줄어요
+                          </div>
+                          <div class="date">2024.12.05</div>
+                        </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="notice-item notice02">
-                        <div class="b">서비스 이용약관 개정 안내</div>
-                        <div class="cont">
-                          안녕하세요. 공지사항 내용이 보입니다. 두줄까지 보이고
-                          그 다음은 줄어요
-                        </div>
-                        <div class="date">2024.12.05</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="notice-item notice03">
-                        <div class="b">서비스 이용약관 개정 안내</div>
-                        <div class="cont">
-                          안녕하세요. 공지사항 내용이 보입니다. 두줄까지 보이고
-                          그 다음은 줄어요
-                        </div>
-                        <div class="date">2024.12.05</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="notice-item notice03">
-                        <div class="b">서비스 이용약관 개정 안내</div>
-                        <div class="cont">
-                          안녕하세요. 공지사항 내용이 보입니다. 두줄까지 보이고
-                          그 다음은 줄어요
-                        </div>
-                        <div class="date">2024.12.05</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="notice-item notice03">
-                        <div class="b">서비스 이용약관 개정 안내</div>
-                        <div class="cont">
-                          안녕하세요. 공지사항 내용이 보입니다. 두줄까지 보이고
-                          그 다음은 줄어요
-                        </div>
-                        <div class="date">2024.12.05</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="notice-item notice03">
-                        <div class="b">서비스 이용약관 개정 안내</div>
-                        <div class="cont">
-                          안녕하세요. 공지사항 내용이 보입니다. 두줄까지 보이고
-                          그 다음은 줄어요
-                        </div>
-                        <div class="date">2024.12.05</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="notice-item notice03">
-                        <div class="b">서비스 이용약관 개정 안내</div>
-                        <div class="cont">
-                          안녕하세요. 공지사항 내용이 보입니다. 두줄까지 보이고
-                          그 다음은 줄어요
-                        </div>
-                        <div class="date">2024.12.05</div>
-                      </div>
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                   </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
                 </div>
               </div>
             </div>
+          </div>
+        </article>
+        <div class="sections">
+          <!-- 퍼니시스 핫딜 -->
+          <section class="section">
+            <div class="section-title">
+              <h3 class="col lg">
+                <span class="text-primary b">퍼니시스</span>
+                <span class="font-thin">핫딜.</span>
+              </h3>
+              <h5 class="sm">
+                제한된 수량을 할인 판매합니다. 지금 바로 구매하세요!
+              </h5>
+            </div>
+            <div class="swiper hot-deal">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="gift-container">
+                    <div class="img">
+                      <span class="rate"><span class="b">5</span>%</span>
+                      <img
+                        src="/assets/images/gift.png"
+                        alt="gift"
+                        height="145"
+                      />
+                    </div>
+                    <div class="desc">
+                      <div class="title">컬처랜드 상품권</div>
+                      <div class="text-textGray">
+                        궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
+                        담당자를 찾아주세요.
+                      </div>
+                      <span class="text-textGray cancel">10,000원</span>
+                      <span class="price">9,500원</span>
+                      <span class="font-sm">(잔여 수량 10장)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gift-container">
+                    <div class="img">
+                      <span class="rate"><span class="b">5</span>%</span>
+                      <img
+                        src="/assets/images/gift.png"
+                        alt="gift"
+                        height="145"
+                      />
+                    </div>
+                    <div class="desc">
+                      <div class="title">컬처랜드 상품권</div>
+                      <div class="text-textGray">
+                        궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
+                        담당자를 찾아주세요.
+                      </div>
+                      <span class="text-textGray cancel">10,000원</span>
+                      <span class="price">9,500원</span>
+                      <span class="font-sm">(잔여 수량 10장)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gift-container">
+                    <div class="img">
+                      <span class="rate"><span class="b">5</span>%</span>
+                      <img
+                        src="/assets/images/gift.png"
+                        alt="gift"
+                        height="145"
+                      />
+                    </div>
+                    <div class="desc">
+                      <div class="title">컬처랜드 상품권</div>
+                      <div class="text-textGray">
+                        궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
+                        담당자를 찾아주세요.
+                      </div>
+                      <span class="text-textGray cancel">10,000원</span>
+                      <span class="price">9,500원</span>
+                      <span class="font-sm">(잔여 수량 10장)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gift-container">
+                    <div class="img">
+                      <span class="rate"><span class="b">5</span>%</span>
+                      <img
+                        src="/assets/images/gift.png"
+                        alt="gift"
+                        height="145"
+                      />
+                    </div>
+                    <div class="desc">
+                      <div class="title">컬처랜드 상품권</div>
+                      <div class="text-textGray">
+                        궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
+                        담당자를 찾아주세요.
+                      </div>
+                      <span class="text-textGray cancel">10,000원</span>
+                      <span class="price">9,500원</span>
+                      <span class="font-sm">(잔여 수량 10장)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </section>
+          <!-- 모바일 상품권 -->
+          <section class="section">
+            <div class="section-title">
+              <h3 class="lg col">
+                <span class="text-primary b">모바일</span>
+                <span class="font-thin">상품권.</span>
+              </h3>
+              <h5 class="sm">안전하고 빠른 신용카드/핸드폰 소액결제</h5>
+            </div>
+            <div class="mobile-gift-container">
+              <div class="gift-item">
+                <div class="img">
+                  <span class="red-label">컬쳐랜드<br />사용불가</span>
+                  <img
+                    src="/assets/images/gift_barcode.png"
+                    alt="모바일 상품권 이미지"
+                  />
+                </div>
+                <div class="desc">
+                  <div class="flex category">
+                    <span class="label-sm label-green">신용카드</span>
+                    <span class="label-sm label-orange">상품권</span>
+                  </div>
+                  <div class="title">컬쳐랜드 상품권</div>
+                </div>
+                <button>구매하기</button>
+              </div>
+              <div class="gift-item">
+                <div class="img">
+                  <span class="red-label">컬쳐랜드<br />사용불가</span>
+                  <img
+                    src="/assets/images/gift_barcode.png"
+                    alt="모바일 상품권 이미지"
+                  />
+                </div>
+                <div class="desc">
+                  <div class="flex category">
+                    <span class="green">신용카드</span>
+                    <span class="orange">상품권</span>
+                  </div>
+                  <div class="title">컬쳐랜드 상품권</div>
+                </div>
+                <button>구매하기</button>
+              </div>
+              <div class="gift-item">
+                <div class="img">
+                  <span class="red-label">컬쳐랜드<br />사용불가</span>
+                  <img
+                    src="/assets/images/gift_barcode.png"
+                    alt="모바일 상품권 이미지"
+                  />
+                </div>
+                <div class="desc">
+                  <div class="flex category">
+                    <span class="green">신용카드</span>
+                    <span class="orange">상품권</span>
+                  </div>
+                  <div class="title">컬쳐랜드 상품권</div>
+                </div>
+                <button>구매하기</button>
+              </div>
+              <div class="gift-item">
+                <div class="img">
+                  <span class="red-label">컬쳐랜드<br />사용불가</span>
+                  <img
+                    src="/assets/images/gift_barcode.png"
+                    alt="모바일 상품권 이미지"
+                  />
+                </div>
+                <div class="desc">
+                  <div class="flex category">
+                    <span class="green">신용카드</span>
+                    <span class="orange">상품권</span>
+                  </div>
+                  <div class="title">컬쳐랜드 상품권</div>
+                </div>
+                <button>구매하기</button>
+              </div>
+              <div class="gift-item">
+                <div class="img">
+                  <span class="red-label">컬쳐랜드<br />사용불가</span>
+                  <span class="rate"><span class="b">5</span>%</span>
+                  <img
+                    src="/assets/images/gift_barcode.png"
+                    alt="모바일 상품권 이미지"
+                  />
+                </div>
+                <div class="desc">
+                  <div class="flex category">
+                    <span class="green">신용카드</span>
+                    <span class="orange">상품권</span>
+                  </div>
+                  <div class="title">컬쳐랜드 상품권</div>
+                </div>
+                <button>구매하기</button>
+              </div>
+            </div>
+          </section>
+          <!-- 도움 필요 -->
+          <section class="section">
+            <div class="section-title">
+              <h3 class="col lg">
+                <span class="text-primary b">도움이 필요하신가요?</span>
+                <span class="font-thin">언제든지 도와드릴께요!</span>
+              </h3>
+            </div>
+            <div class="qna-container">
+              <div class="qna-item">
+                <div class="title">결과는 성공인데 문자를 받지 못했어요.</div>
+                <div class="content">
+                  결과는 성공인데 문자를 받지 못했어요.결과는 성공인데 문자를
+                  받지 못했어요.결과는 성공인데 문자를 받지 못했어요.
+                </div>
+                <button>자세히보기</button>
+              </div>
+              <div class="qna-item">
+                <div class="title">결과는 성공인데 문자를 받지 못했어요.</div>
+                <div class="content">
+                  결과는 성공인데 문자를 받지 못했어요.결과는 성공인데 문자를
+                  받지 못했어요.결과는 성공인데 문자를 받지 못했어요.
+                </div>
+                <button>자세히보기</button>
+              </div>
+              <div class="qna-item">
+                <div class="title">결과는 성공인데 문자를 받지 못했어요.</div>
+                <div class="content">
+                  결과는 성공인데 문자를 받지 못했어요.결과는 성공인데 문자를
+                  받지 못했어요.결과는 성공인데 문자를 받지 못했어요.
+                </div>
+                <button>자세히보기</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="inner">
+          <div class="lt">
+            <img src="/assets/images/footer_logo.png" alt="logo" class="logo" />
+            <div class="contact-info">
+              <span>010-1234-1233</span>
+              <span>상담 가능 시간 AM 09:00 ~ PM 11:00</span>
+            </div>
+            <div class="data">
+              <span class="company">퍼시스모어</span>
+              <span><span class="text-gray">사업자</span>퍼시스 상품권</span>
+              <span><span class="text-gray">대표</span>홍길동</span>
+              <span
+                ><span class="text-gray">주소</span>서울시 어디동 어디로 0길
+                11</span
+              >
+              <span
+                ><span class="text-gray">사업자등록번호</span
+                >000-00-000000</span
+              >
+              <span
+                ><span class="text-gray">통신판매업신고번호</span>제
+                000-서울-000호</span
+              >
+              <span
+                ><span class="text-gray">개인정보책임관리자</span>홍길동</span
+              >
+            </div>
+            <span class="text-gray"
+              >COPYRIGHT ⓒ 퍼시스모어.ALL RIGHTS RESERVED.</span
+            >
+          </div>
+          <div class="rt">
+            <ul>
+              <li><a href="#">서비스이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
           </div>
         </div>
-      </article>
-      <div class="sections">
-        <!-- 퍼니시스 핫딜 -->
-        <section class="section">
-          <div class="section-title">
-            <h3 class="lg">
-              <span class="text-primary b">퍼니시스</span>
-              <span class="font-thin">핫딜.</span>
-            </h3>
-            <h5 class="sm">
-              제한된 수량을 할인 판매합니다. 지금 바로 구매하세요!
-            </h5>
-          </div>
-          <div class="swiper hot-deal">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="gift-container">
-                  <div class="img">
-                    <span class="rate"><span class="b">5</span>%</span>
-                    <img
-                      src="/assets/images/gift.png"
-                      alt="gift"
-                      height="145"
-                    />
-                  </div>
-                  <div class="desc">
-                    <div class="title">컬처랜드 상품권</div>
-                    <div class="text-textGray">
-                      궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
-                      담당자를 찾아주세요.
-                    </div>
-                    <span class="text-textGray cancel">10,000원</span>
-                    <span class="price">9,500원</span>
-                    <span class="font-sm">(잔여 수량 10장)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gift-container">
-                  <div class="img">
-                    <span class="rate"><span class="b">5</span>%</span>
-                    <img
-                      src="/assets/images/gift.png"
-                      alt="gift"
-                      height="145"
-                    />
-                  </div>
-                  <div class="desc">
-                    <div class="title">컬처랜드 상품권</div>
-                    <div class="text-textGray">
-                      궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
-                      담당자를 찾아주세요.
-                    </div>
-                    <span class="text-textGray cancel">10,000원</span>
-                    <span class="price">9,500원</span>
-                    <span class="font-sm">(잔여 수량 10장)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gift-container">
-                  <div class="img">
-                    <span class="rate"><span class="b">5</span>%</span>
-                    <img
-                      src="/assets/images/gift.png"
-                      alt="gift"
-                      height="145"
-                    />
-                  </div>
-                  <div class="desc">
-                    <div class="title">컬처랜드 상품권</div>
-                    <div class="text-textGray">
-                      궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
-                      담당자를 찾아주세요.
-                    </div>
-                    <span class="text-textGray cancel">10,000원</span>
-                    <span class="price">9,500원</span>
-                    <span class="font-sm">(잔여 수량 10장)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gift-container">
-                  <div class="img">
-                    <span class="rate"><span class="b">5</span>%</span>
-                    <img
-                      src="/assets/images/gift.png"
-                      alt="gift"
-                      height="145"
-                    />
-                  </div>
-                  <div class="desc">
-                    <div class="title">컬처랜드 상품권</div>
-                    <div class="text-textGray">
-                      궁금한 사항은 [070-4032-3998]번으로 전화주셔서 쇼핑몰
-                      담당자를 찾아주세요.
-                    </div>
-                    <span class="text-textGray cancel">10,000원</span>
-                    <span class="price">9,500원</span>
-                    <span class="font-sm">(잔여 수량 10장)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-scrollbar"></div>
-          </div>
-        </section>
-        <!-- 모바일 상품권 -->
-        <section class="section">
-          <div class="section-title">
-            <h3 class="lg">
-              <span class="text-primary b">모바일</span>
-              <span class="font-thin">상품권.</span>
-            </h3>
-            <h5 class="sm">안전하고 빠른 신용카드/핸드폰 소액결제</h5>
-          </div>
-          <div class="mobile-gift-container">
-            <div class="gift-item">
-              <div class="img">
-                <span class="red-label">컬쳐랜드사용불가</span>
-                <img
-                  src="/assets/images/gift_barcode.png"
-                  alt="모바일 상품권 이미지"
-                />
-              </div>
-              <div class="desc">
-                <div class="flex category">
-                  <span class="label-sm label-green">신용카드</span>
-                  <span class="label-sm label-orange">상품권</span>
-                </div>
-                <div class="title">컬쳐랜드 상품권</div>
-              </div>
-              <button>구매하기</button>
-            </div>
-            <div class="gift-item">
-              <div class="img">
-                <span class="red-label">컬쳐랜드사용불가</span>
-                <img
-                  src="/assets/images/gift_barcode.png"
-                  alt="모바일 상품권 이미지"
-                />
-              </div>
-              <div class="desc">
-                <div class="flex category">
-                  <span class="green">신용카드</span>
-                  <span class="orange">상품권</span>
-                </div>
-                <div class="title">컬쳐랜드 상품권</div>
-              </div>
-              <button>구매하기</button>
-            </div>
-            <div class="gift-item">
-              <div class="img">
-                <span class="red-label">컬쳐랜드사용불가</span>
-                <img
-                  src="/assets/images/gift_barcode.png"
-                  alt="모바일 상품권 이미지"
-                />
-              </div>
-              <div class="desc">
-                <div class="flex category">
-                  <span class="green">신용카드</span>
-                  <span class="orange">상품권</span>
-                </div>
-                <div class="title">컬쳐랜드 상품권</div>
-              </div>
-              <button>구매하기</button>
-            </div>
-            <div class="gift-item">
-              <div class="img">
-                <span class="red-label">컬쳐랜드사용불가</span>
-                <img
-                  src="/assets/images/gift_barcode.png"
-                  alt="모바일 상품권 이미지"
-                />
-              </div>
-              <div class="desc">
-                <div class="flex category">
-                  <span class="green">신용카드</span>
-                  <span class="orange">상품권</span>
-                </div>
-                <div class="title">컬쳐랜드 상품권</div>
-              </div>
-              <button>구매하기</button>
-            </div>
-            <div class="gift-item">
-              <div class="img">
-                <span class="red-label">컬쳐랜드사용불가</span>
-                <span class="rate"><span class="b">5</span>%</span>
-                <img
-                  src="/assets/images/gift_barcode.png"
-                  alt="모바일 상품권 이미지"
-                />
-              </div>
-              <div class="desc">
-                <div class="flex category">
-                  <span class="green">신용카드</span>
-                  <span class="orange">상품권</span>
-                </div>
-                <div class="title">컬쳐랜드 상품권</div>
-              </div>
-              <button>구매하기</button>
-            </div>
-          </div>
-        </section>
-        <!-- 도움 필요 -->
-        <section class="section">
-          <div class="section-title">
-            <h3 class="lg">
-              <span class="text-primary b">도움이 필요하신가요?</span>
-              <span class="font-thin">언제든지 도와드릴께요!</span>
-            </h3>
-          </div>
-          <div class="qna-container">
-            <div class="qna-item">
-              <div class="title">결과는 성공인데 문자를 받지 못했어요.</div>
-              <div class="content">
-                결과는 성공인데 문자를 받지 못했어요.결과는 성공인데 문자를 받지
-                못했어요.결과는 성공인데 문자를 받지 못했어요.
-              </div>
-              <button>자세히보기</button>
-            </div>
-            <div class="qna-item">
-              <div class="title">결과는 성공인데 문자를 받지 못했어요.</div>
-              <div class="content">
-                결과는 성공인데 문자를 받지 못했어요.결과는 성공인데 문자를 받지
-                못했어요.결과는 성공인데 문자를 받지 못했어요.
-              </div>
-              <button>자세히보기</button>
-            </div>
-            <div class="qna-item">
-              <div class="title">결과는 성공인데 문자를 받지 못했어요.</div>
-              <div class="content">
-                결과는 성공인데 문자를 받지 못했어요.결과는 성공인데 문자를 받지
-                못했어요.결과는 성공인데 문자를 받지 못했어요.
-              </div>
-              <button>자세히보기</button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer></footer>
+      </footer>
+    </div>
     <script>
+      //헤더 내비
+      const navItems = document.querySelectorAll(".nav-list li");
+      navItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          navItems.forEach((navItem) => navItem.classList.remove("on"));
+          item.classList.add("on");
+
+          const href = item.getAttribute("data-href");
+          if (href) {
+            window.location.href = href;
+          }
+        });
+      });
+
+      //모바일 내비
+      const navBtn = document.querySelector(".menu.mobile");
+      const nav = document.querySelector("nav");
+
+      if (navBtn && nav) {
+        navBtn.addEventListener("click", (event) => {
+          event.stopPropagation(); // 클릭 이벤트 전파 방지
+          nav.classList.toggle("show");
+          navBtn.classList.toggle("on");
+        });
+      }
+
       // 메인 배너
       const bannerSwiper = new Swiper(".main-banner", {
         loop: true,
@@ -425,6 +529,7 @@
         //   delay: 3000,
         //   disableOnInteraction: false,
         // },
+        slidesPerView: "auto",
         pagination: {
           el: ".main-banner .swiper-pagination",
           type: "fraction",
@@ -465,11 +570,18 @@
         //   delay: 3000,
         //   disableOnInteraction: false,
         // },
-        slidesPerView: 3,
         spaceBetween: 20,
         scrollbar: {
           el: ".hot-deal .swiper-scrollbar",
           hide: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          },
         },
       });
     </script>

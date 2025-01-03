@@ -5,168 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/package/swiper-bundle.min.css" />
     <script src="/src/package/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/media.css" />
     <title>ESIMFARM</title>
   </head>
   <body>
-    <header>
-      <div class="inner">
-        <div>Fursysmore</div>
-        <nav class="nav">
-          <a href="#" class="link on">핫딜</a>
-          <a href="#" class="link">공지사항</a>
-          <a href="#" class="link">이용방법</a>
-          <a href="#" class="link">고객센터</a>
-        </nav>
-        <div class="btn-box">
-          <button>로그인</button>
-          <button class="sign-up">회원가입</button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="hot-deal-container">
-        <div class="lt">
-            <div class="img">
-                <img src="../assets/images/gift.png" alt="gift image" />
-            </div>
-            <div class="detail">
-                <table class="table">
-                    <caption class="sub-title">상품 상세 정보</caption>
+    <div id="wrap">
+      <main>
+        <div class="main-inner hot-deal-container">
+          <div class="sub-center">
+            <div class="cont">
+              <div class="lt">
+                <div class="img">
+                  <img src="../assets/images/gift.png" alt="gift image" />
+                </div>
+                <div class="detail">
+                  <table class="table">
+                    <colgroup>
+                      <col width="30%" />
+                      <col width="70%" />
+                    </colgroup>
+                    <caption class="sub-title">
+                      상품 상세 정보
+                    </caption>
                     <tbody>
-                        <tr>
-                            
-                            <th>발권사</th>
-                            <td>aaa</td>
-                        </tr>
-                        <tr>
-                            
-                            <th>상품명</th>
-                            <td>aaa</td>
-                        </tr>
-                        <tr>
-                            
-                            <th>홈페이지</th>
-                            <td>aaa</td>
-                        </tr>
-                        <tr>
-                            
-                            <th>사용처</th>
-                            <td>aaa</td>
-                        </tr>
-                        <tr>
-                            
-                            <th>상품권 형식</th>
-                            <td>aaa</td>
-                        </tr>
+                      <tr>
+                        <th>발권사</th>
+                        <td>aaa</td>
+                      </tr>
+                      <tr>
+                        <th>상품명</th>
+                        <td>aaa</td>
+                      </tr>
+                      <tr>
+                        <th>홈페이지</th>
+                        <td>aaa</td>
+                      </tr>
+                      <tr>
+                        <th>사용처</th>
+                        <td>aaa</td>
+                      </tr>
+                      <tr>
+                        <th>상품권 형식</th>
+                        <td>aaa</td>
+                      </tr>
                     </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="rt">
-            <div class="top">
-                <span>모바일 상품권</span>
-                <div class="flex justify-between">
+                  </table>
+                </div>
+              </div>
+              <div class="rt">
+                <div class="top">
+                  <span class="text-textGray">모바일 상품권</span>
+                  <div class="flex justify-between items-center">
                     <h1 class="title">컬쳐랜드 상품권</h1>
-                    <button>초기화</button>
+                    <button class="reset">초기화</button>
+                  </div>
                 </div>
-            </div>
-            <div class="detail">
-                <table>
+                <div class="detail">
+                  <table>
                     <tbody>
-                        <tr>
-                            <th class="sub-title">짧은 설명</th>
-                            <td>궁금한 사항은 1234번으로 전화주셔서 쇼핑몰 담당자를 찾아주세요.</td>
-                        </tr>
-                        <tr>
-                            <th class="sub-title">정가</th>
-                            <td class="cancel">10,000원</td>
-                        </tr>
-                        <tr>
-                            <th class="sub-title">판매가</th>
-                            <td class="text-red">8,000원</td>
-                        </tr>
+                      <tr>
+                        <th class="sub-title">짧은 설명</th>
+                        <td>
+                          궁금한 사항은 1234번으로 전화주셔서 쇼핑몰 담당자를
+                          찾아주세요.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="sub-title">정가</th>
+                        <td class="cancel">10,000원</td>
+                      </tr>
+                      <tr>
+                        <th class="sub-title">판매가</th>
+                        <td class="text-red b">8,000원</td>
+                      </tr>
                     </tbody>
-                </table>
-                <div class="cart">
-                    <div class="item flex">
-                        <div class="price"><span>10,000</span>
+                  </table>
+                  <div class="cart">
+                    <div class="item g10 flex">
+                      <div class="price">
+                        <span>10,000</span>
                         <div class="labels">
-                            <span class="label-sm label-red">핫딜</span>
-                            <span class="label-sm label-orange">-10%</span>
-                            <span class="label-sm label-green">10장 남음</span>
+                          <span class="label-sm label-red">핫딜</span>
+                          <span class="label-sm label-orange">-10%</span>
+                          <span class="label-sm label-green">10장 남음</span>
                         </div>
-                        </div>
-                        <div class="amount">
-                            <button class="minus">-</button>
-                            <input type="number" value="1" />
-                            <button class="plus">+</button>
-                        </div>
+                      </div>
+                      <div class="amount">
+                        <button class="minus">－</button>
+                        <input type="number" value="1" />
+                        <button class="plus">＋</button>
+                      </div>
                     </div>
-                    <div class="item flex">
-                        <div class="price"><span>10,000</span></div>
-                        <div class="amount">
-                            <button class="minus">-</button>
-                            <input type="number" value="1" />
-                            <button class="plus">+</button>
-                        </div>
+                    <div class="item g10 flex">
+                      <div class="price"><span>10,000</span></div>
+                      <div class="amount">
+                        <button class="minus">－</button>
+                        <input type="number" value="1" />
+                        <button class="plus">＋</button>
+                      </div>
                     </div>
-                </div>
-                <div class="pay">
+                  </div>
+                  <div class="pay">
                     <h5 class="sub-title">결제 수단 선택</h5>
                     <div class="flex g10">
-                        <div class="radio">
-                            <label for="credit">신용카드</label>
-                            <input type="radio" id="credit">
-                        </div>
-                        <div class="radio">
-                            <label for="phone">휴대폰 결제</label>
-                            <input type="radio" id="phone">
-                        </div>
+                      <div class="radio">
+                        <input type="radio" id="credit" checked />
+                        <label for="credit">신용카드</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" id="phone" />
+                        <label for="phone">휴대폰 결제</label>
+                      </div>
                     </div>
                     <div class="row">
-                        <span class="sub-title">구매 제한</span>
-                        <span class="text-red">1일 최대한도: 350,000원 / 휴대폰 결제 수수료 10%</span>
+                      <span class="sub-title">구매 제한</span>
+                      <span class="text-red"
+                        >1일 최대한도: 350,000원 / 휴대폰 결제 수수료 10%</span
+                      >
                     </div>
-                </div>
-                <div class="summary">
-                    <table class="table"
-                        <caption class="sub-title">결제 정보</caption>
-                        <tbody>
-                            <tr>
-                                <th>상품권 총 금액</th>
-                                <td class="text-xl b">49,000원</td>
-                            </tr>
-                            <tr>
-                                <th>할인 금액</th>
-                                <td>
-                                    <div class="flex">
-                                        <span class="minus">-</span>
-                                        <span>할인: (-) 0원 (상품 0원, 핫딜 0원, 쿠폰 0원)</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th>결제 수수료</th>
-                                <td>4,900원</td>
-                            </tr>
-                            <tr>
-                                <th>최종 결제 금액</th>
-                                <td class="text-xl b text-red">53,900원</td>
-                            </tr>
-                        </tbody>
+                  </div>
+                  <div class="summary">
+                    <table class="table">
+                      <caption class="sub-title">
+                        결제 정보
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <th>상품권 총 금액</th>
+                          <td class="text-xl b">49,000원</td>
+                        </tr>
+                        <tr>
+                          <th>할인 금액</th>
+                          <td>
+                            <div class="flex">
+                              <span class="minus">-</span>
+                              <span
+                                >할인: (-) 0원 (상품 0원, 핫딜 0원, 쿠폰
+                                0원)</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>결제 수수료</th>
+                          <td>4,900원</td>
+                        </tr>
+                        <tr>
+                          <th>최종 결제 금액</th>
+                          <td class="text-xl b text-red">53,900원</td>
+                        </tr>
+                      </tbody>
                     </table>
+                  </div>
+                  <div class="flex mt-4">
+                    <button class="btn btn-flex">바로 구매하기</button>
+                  </div>
                 </div>
+              </div>
             </div>
-            <button class="parchase">구매하기</button>
+            <div class="tabs-container">
+              <ul class="tabs">
+                <li class="tab on" data-target="#information">이용 안내</li>
+                <li class="tab" data-target="#notice">구매 시 유의사항</li>
+              </ul>
+            </div>
+            <div class="notice-contents-container">
+              <section id="information" class="on">
+                <div class="inner">
+                  <p class="b">
+                    ㆍ 핫 딜 상품은 정해신 수량 판매시 자동 종료 됩니다.
+                  </p>
+                  <p class="b">
+                    ㆍ 회원가입시 인증된 휴대폰으로 상품권 핀번호가 발송됩니다.
+                  </p>
+                  <p class="indent">
+                    - 이메일로 받을시 마이페이지 주문내역에서 발송가능
+                  </p>
+                  <p class="b">ㆍ 구매한도</p>
+                  <p class="indent">- 신용카드 : 카드사당 월 일시불 100만원</p>
+                  <p class="indent">- 휴대폰 : 각 통신사별 정책 적용</p>
+                  <p class="b">
+                    ㆍ 발송된 핀번호는 분실 및 해킹 위험이 있으니 48시간내
+                    사용하세요.
+                  </p>
+                  <p class="b">
+                    ㆍ 상품특성상 발송된 상품은 반품이 불가합니다.
+                  </p>
+                  <p class="b">ㆍ 유효기간은 발행일로 5년입니다.</p>
+                </div>
+              </section>
+              <section class="notice">
+                <div class="inner">
+                  <p>???</p>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer></footer>
+      </main>
+    </div>
     <script>
-      
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab");
+        const sections = document.querySelectorAll(
+          ".notice-contents-container > section"
+        );
+        let activeTab = document
+          .querySelector(".tab.on")
+          ?.getAttribute("data-target");
+
+        tabs.forEach((tab) => {
+          console.log(tab);
+          tab.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = this.getAttribute("data-target");
+            console.log(activeTab);
+            if (activeTab === target) return;
+
+            tabs.forEach((tab) => tab.classList.remove("on"));
+            sections.forEach((section) => section.classList.remove("on"));
+
+            this.classList.add("on");
+            document
+              .querySelectorAll(target)
+              .forEach((el) => el.classList.add("on"));
+
+            activeTab = target;
+          });
+        });
+      });
     </script>
   </body>
 </html>
