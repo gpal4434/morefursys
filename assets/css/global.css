@@ -11,6 +11,9 @@
 .flex {
   display: flex;
 }
+.flex-1 {
+  flex: 1 1 0%;
+}
 .flex.btw {
   justify-content: space-between;
 }
@@ -283,7 +286,7 @@ input[type="submit"] {
   font-weight: 500;
   color: #999;
   text-align: center;
-  min-width: 100px;
+  min-width: 150px;
 }
 .list .body {
   border-bottom: 1px solid #d9d9d9;
@@ -314,7 +317,7 @@ input[type="submit"] {
 .list:not(.qna) .row:hover div:not(.label) {
   color: #79a5ff;
 }
-.list .body .row:nth-child(2n) {
+.list .body .row:nth-child(2n):not(.sub) {
   background-color: #fff;
 }
 .list .info,
@@ -323,7 +326,7 @@ input[type="submit"] {
 }
 .list .body .row > div {
   padding: 1.5rem;
-  min-width: 100px;
+  min-width: 150px;
   text-align: center;
   font-weight: bold;
 }
@@ -449,6 +452,7 @@ input[type="submit"] {
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 .board-detail .head .subject {
 }

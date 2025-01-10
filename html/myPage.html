@@ -16,117 +16,106 @@
         <div class="main-inner customer-container">
           <div class="tabs-container">
             <ul class="tabs">
-              <li class="tab on" data-target="#notice">공지사항</li>
-              <li class="tab" data-target="#faq">자주하는 질문</li>
-              <li class="tab" data-target="#qna">1:1 문의</li>
-              <li class="tab" data-target="#qnaList">문의 내역</li>
+              <li class="tab on" data-target="#list">구매 내역</li>
+              <li class="tab" data-target="#myInfo">회원 정보 수정</li>
             </ul>
           </div>
-          <section id="notice">
-            <div class="list">
-              <div class="head">
-                <span>번호</span>
-                <span>카테고리</span>
-                <span class="fx1">제목</span>
-                <span>작성자</span>
-              </div>
-              <div class="body">
-                <div
-                  class="row"
-                  onclick="location.href='/html/customerDetail.html'"
-                >
-                  <div>1</div>
-                  <div>카테고리</div>
-                  <div class="b fx1">매입 수수료 안내</div>
-                  <div>관리자</div>
-                </div>
-                <div
-                  class="row"
-                  onclick="location.href='/html/customerDetail.html'"
-                >
-                  <div>2</div>
-                  <div>카테고리</div>
-                  <div class="b fx1">
-                    도서문화상품권 / 북앤라이프 정기점검 안내
-                  </div>
-                  <div>관리자</div>
-                </div>
-              </div>
-            </div>
-            <pagination-component></pagination-component>
-          </section>
-          <section id="faq">
+          <section id="list">
             <div class="list qna">
               <div class="head">
-                <span>QnA</span>
-                <span>카테고리</span>
-                <span class="fx1">제목</span>
-                <span>작성자</span>
+                <span>번호</span>
+                <span class="fx1">구매 상품권</span>
+                <span>구매 금액</span>
+                <span>구매 일시</span>
               </div>
               <div class="body">
                 <div class="item">
-                  <div class="row question">
-                    <div>Q</div>
-                    <div>회원정보</div>
-                    <div class="b fx1">
-                      결과는 성공인데 문자를 받지 못했어요.
-                    </div>
-                    <div>관리자</div>
+                  <div class="row subject">
+                    <div>2</div>
+                    <div class="b fx1">컬쳐랜드 상품권 외 3종</div>
+                    <div>70,000</div>
+                    <div>2024.12.12 12:12</div>
                   </div>
-                  <div class="row answer">
-                    <div>A</div>
-                    <div class="fx1">
-                      친전한 답변 내용이 들어 가겠쥬~친전한 답변 내용이 들어
-                      가겠쥬~친전한 답변 내용이 들어 가겠쥬~친전한 답변 내용이
-                      들어 가겠쥬~ 친전한 답변 내용이 들어 가겠쥬~
+                  <div class="row sub">
+                    <div></div>
+                    <div colspan="2" class="fx1">
+                      <ul>
+                        <li class="flex text-center">
+                          <div class="fx1">컬쳐랜드 문화상품권</div>
+                          <div style="min-width: 150px">20,000</div>
+                        </li>
+                        <li class="flex">
+                          <div class="fx1">컬쳐랜드 문화상품권</div>
+                          <div style="min-width: 150px">20,000</div>
+                        </li>
+                        <li class="flex">
+                          <div class="fx1">컬쳐랜드 문화상품권</div>
+                          <div style="min-width: 150px">20,000</div>
+                        </li>
+                      </ul>
                     </div>
+                    <div></div>
                   </div>
                 </div>
                 <div class="item">
-                  <div class="row question">
-                    <div>Q</div>
-                    <div>회원정보</div>
-                    <div class="b fx1">
-                      결과는 성공인데 문자를 받지 못했어요.
-                    </div>
-                    <div>관리자</div>
+                  <div class="row subject">
+                    <div>2</div>
+                    <div class="b fx1">컬쳐랜드 상품권 외 3종</div>
+                    <div>70,000</div>
+                    <div>2024.12.12 12:12</div>
                   </div>
-                  <div class="row answer">
-                    <div>A</div>
-                    <div class="fx1">
-                      친전한 답변 내용이 들어 가겠쥬~친전한 답변 내용이 들어
-                      가겠쥬~친전한 답변 내용이 들어 가겠쥬~친전한 답변 내용이
-                      들어 가겠쥬~ 친전한 답변 내용이 들어 가겠쥬~
+                  <div class="row sub">
+                    <div></div>
+                    <div colspan="2" class="fx1">
+                      <ul>
+                        <li class="flex text-center">
+                          <div class="fx1">컬쳐랜드 문화상품권</div>
+                          <div style="min-width: 150px">20,000</div>
+                        </li>
+                        <li class="flex">
+                          <div class="fx1">컬쳐랜드 문화상품권</div>
+                          <div style="min-width: 150px">20,000</div>
+                        </li>
+                        <li class="flex">
+                          <div class="fx1">컬쳐랜드 문화상품권</div>
+                          <div style="min-width: 150px">20,000</div>
+                        </li>
+                      </ul>
                     </div>
+                    <div></div>
                   </div>
                 </div>
               </div>
+              <pagination-component></pagination-component>
             </div>
           </section>
-          <section id="qna">
-            <div class="qna-container">
+          <section id="myInfo">
+            <div class="my-info-container">
               <table class="table">
                 <colgroup>
                   <col width="30%" />
                   <col width="70%" />
                 </colgroup>
                 <tr>
-                  <th>말머리</th>
+                  <th>아이디*</th>
                   <td>
-                    <select name="" id="" class="select">
-                      <option value="">문의</option>
-                      <option value="">문의</option>
-                    </select>
+                    <div>perserismore2333</div>
                   </td>
                 </tr>
                 <tr>
-                  <th>작성자</th>
+                  <th>현재 비밀번호*</th>
                   <td>
-                    <input type="text" class="input" />
+                    <input type="password" class="input" />
                   </td>
                 </tr>
                 <tr>
-                  <th>비밀번호</th>
+                  <th>변경할 비밀번호*</th>
+                  <td>
+                    <input type="password" class="input" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>변경할 비밀번호 확인*</th>
                   <td>
                     <input type="password" class="input" />
                   </td>
@@ -238,38 +227,6 @@
               <button class="btn btn-lg btn-black">문의하기</button>
             </div>
           </section>
-          <section id="qnaList" class="on">
-              <div class="list">
-                <div class="head">
-                  <span>번호</span>
-                  <span>말머리</span>
-                  <span class="fx1">제목</span>
-                  <span>작성자</span>
-                </div>
-                <div class="body">
-                  <div
-                    class="row"
-                    onclick="location.href='/html/qnaDetail.html'"
-                  >
-                    <div>1</div>
-                    <div>말머리</div>
-                    <div class="b fx1">문의해요</div>
-                    <div>닉네임111</div>
-                  </div>
-                  <div
-                    class="row"
-                    onclick="location.href='/html/qnaDetail.html'"
-                  >
-                    <div>2</div>
-                    <div>말머리</div>
-                    <div class="b fx1">
-                      질문합니다
-                    </div>
-                    <div>닉네임222</div>
-                  </div>
-                </div>
-              <pagination-component></pagination-component>
-          </section>
         </div>
       </main>
     </div>
@@ -304,18 +261,18 @@
           });
         });
 
-        //qna 아코디언
-        const questions = document.querySelectorAll(".question");
-        questions.forEach((q) =>
+        //구매내역 아코디언
+        const subjects = document.querySelectorAll(".subject");
+        subjects.forEach((q) =>
           q.addEventListener("click", function () {
-            const answer = this.nextElementSibling;
-            const isOpen = answer.classList.contains("on");
+            const sub = this.nextElementSibling;
+            const isOpen = sub.classList.contains("on");
 
             document
-              .querySelectorAll(".answer")
+              .querySelectorAll(".sub")
               .forEach((a) => a.classList.remove("on"));
 
-            if (!isOpen) answer.classList.add("on");
+            if (!isOpen) sub.classList.add("on");
           })
         );
       });
