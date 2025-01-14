@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/package/swiper-bundle.min.css" />
+    <script src="../src/package/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/media.css" />
+    <script src="../js/pagination.js" type="module"></script>
+    <title>퍼니시스</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <main>
+        <div class="sign-up-container">
+          <section class="section">
+            <div class="sign-up-title">
+              <h1 class="b">회원가입</h1>
+              <div class="steps">
+                <div class="step">
+                  <span class="b">01</span>
+                  <span>약관 동의</span>
+                  <span class="b">></span>
+                </div>
+                <div class="step on">
+                  <span class="b">02</span>
+                  <span>정보 입력</span>
+                  <span class="b">></span>
+                </div>
+                <div class="step">
+                  <span class="b">03</span>
+                  <span>가입 완료</span>
+                </div>
+              </div>
+            </div>
+            <div class="conts">
+              <div class="title-box flex w-full btw al-cnt">
+                <h3>기본 정보</h3>
+                <p class="text-red">
+                  * 표시는 반드시 입력하셔야 하는 항목입니다.
+                </p>
+              </div>
+              <table class="table">
+                <colgroup>
+                  <col width="20%" />
+                  <col width="80%" />
+                </colgroup>
+                <tr>
+                  <th class="star">아이디</th>
+                  <td>
+                    <div>perserismore2333</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="star">비밀번호</th>
+                  <td>
+                    <input type="password" class="input" />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="star">비밀번호 확인</th>
+                  <td>
+                    <input type="password" class="input" />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="star">이름</th>
+                  <td>
+                    <input type="text" class="input" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>이메일 주소</th>
+                  <td>
+                    <div class="flex g5 al-cnt">
+                      <input type="text" class="input input-md" />
+                      <span>@</span>
+                      <input type="text" class="input input-md" />
+                      <select name="" id="" class="select">
+                        <option value="naver.com">네이버</option>
+                        <option value="gmail.com">지메일</option>
+                      </select>
+                    </div>
+                    <div class="checkbox mt-1">
+                      <input type="checkbox" id="agree01" name="agree01" />
+                      <label for="agree01" name="agree01">
+                        정보/이벤트 메일 수신에 동의합니다.</label
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>휴대폰 번호</th>
+                  <td>
+                    <div class="flex g5 al-cnt">
+                      <input type="text" class="input input-sm" />
+                      <span>-</span>
+                      <input type="text" class="input input-sm" />
+                      <span>-</span>
+                      <input type="text" class="input input-sm" />
+                      <button class="btn btn-black">본인인증</button>
+                    </div>
+
+                    <div class="checkbox mt-1">
+                      <input type="checkbox" id="agree01" name="agree01" />
+                      <label for="agree01" name="agree01">
+                        정보/이벤트 문자 수신에 동의합니다.</label
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>전화번호</th>
+                  <td>
+                    <input type="text" class="input" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>주소</th>
+                  <td>
+                    <div class="flex col g10">
+                      <div class="flex g5">
+                        <input type="text" class="input input-md" disabled />
+                        <button class="btn btn-white">우편번호 검색</button>
+                      </div>
+                      <input type="text" class="input" disabled />
+                      <input type="text" class="input" disabled />
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <div class="title-box flex w-full btw al-cnt mt-6">
+                <h3>부가 정보</h3>
+              </div>
+              <table class="table">
+                <colgroup>
+                  <col width="20%" />
+                  <col width="80%" />
+                </colgroup>
+                <tr>
+                  <th class="star">생년월일</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="예)19880101"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="flex jt-cnt mt-6 g10">
+              <button class="btn btn-lg btn-white">취소</button>
+              <button class="btn btn-lg btn-black">회원가입</button>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

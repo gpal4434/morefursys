@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/package/swiper-bundle.min.css" />
-    <script src="/src/package/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../src/package/swiper-bundle.min.css" />
+    <script src="../src/package/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/media.css" />
     <script src="../js/pagination.js" type="module"></script>
@@ -12,6 +12,54 @@
   </head>
   <body>
     <div id="wrap">
+      
+      <header class="header">
+        <div class="header-inner">
+          <button class="menu mobile"></button>
+          <a href="/" class="logo">
+            <img src="../assets/images/logo.png" alt="logo" />
+          </a>
+          <nav>
+            <div class="intro mobile">
+              <p>안녕하세요!<br />상품권 최고 매입 퍼시스모어입니다.</p>
+
+              <div class="btn-box mobile flex">
+                <button>로그인</button>
+                <button class="sign-up">회원가입</button>
+              </div>
+            </div>
+            <ul class="nav-list">
+              <li data-href="/html/hotDeal.html">
+                <span>핫딜</span>
+              </li>
+              <li data-href="/html/notice.html">
+                <span>공지사항</span>
+              </li>
+              <li data-href="/html/status.html">
+                <span>실시간 매입 현황</span>
+              </li>
+              <li data-href="/html/customer.html"><span>고객센터</span></li>
+            </ul>
+            <footer class="mobile">
+              <div class="inner">
+                <div class="lt">
+                  <div class="contact-info">
+                    <span>010-1234-1233</span>
+                    <span>상담 가능 시간 AM 09:00 ~ PM 11:00</span>
+                  </div>
+                  <span class="text-gray"
+                    >COPYRIGHT ⓒ 퍼시스모어.ALL RIGHTS RESERVED.</span
+                  >
+                </div>
+              </div>
+            </footer>
+          </nav>
+          <div class="btn-box pc flex">
+            <button>로그인</button>
+            <button class="sign-up">회원가입</button>
+          </div>
+        </div>
+      </header>
       <main>
         <div class="main-inner customer-container">
           <div class="tabs-container">
@@ -22,7 +70,7 @@
               <li class="tab" data-target="#qnaList">문의 내역</li>
             </ul>
           </div>
-          <section id="notice">
+          <section id="notice" class="on">
             <div class="list">
               <div class="head">
                 <span>번호</span>
@@ -107,8 +155,8 @@
             <div class="qna-container">
               <table class="table">
                 <colgroup>
-                  <col width="30%" />
-                  <col width="70%" />
+                  <col width="20%" />
+                  <col width="80%" />
                 </colgroup>
                 <tr>
                   <th>말머리</th>
@@ -224,11 +272,11 @@
                   pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                   in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
-                <div class="checkbox">
+                <div class="checkbox mt-1">
                   <input type="checkbox" id="agree" />
                   <label for="agree"
                     >비회원 글작성에 대한 개인정보 수집 및 이용동의
-                    <a href="#" class="underline">전체보기 ></a></label
+                    <a href="#" class="underline">전체보기</a></label
                   >
                 </div>
               </section>
@@ -238,7 +286,7 @@
               <button class="btn btn-lg btn-black">문의하기</button>
             </div>
           </section>
-          <section id="qnaList" class="on">
+          <section id="qnaList">
               <div class="list">
                 <div class="head">
                   <span>번호</span>
@@ -272,6 +320,46 @@
           </section>
         </div>
       </main>
+      <footer>
+        <div class="inner">
+          <div class="lt">
+            <img src="/assets/images/footer_logo.png" alt="logo" class="logo" />
+            <div class="contact-info">
+              <span>010-1234-1233</span>
+              <span>상담 가능 시간 AM 09:00 ~ PM 11:00</span>
+            </div>
+            <div class="data">
+              <span class="company">퍼시스모어</span>
+              <span><span class="text-gray">사업자</span>퍼시스 상품권</span>
+              <span><span class="text-gray">대표</span>홍길동</span>
+              <span
+                ><span class="text-gray">주소</span>서울시 어디동 어디로 0길
+                11</span
+              >
+              <span
+                ><span class="text-gray">사업자등록번호</span
+                >000-00-000000</span
+              >
+              <span
+                ><span class="text-gray">통신판매업신고번호</span>제
+                000-서울-000호</span
+              >
+              <span
+                ><span class="text-gray">개인정보책임관리자</span>홍길동</span
+              >
+            </div>
+            <span class="text-gray"
+              >COPYRIGHT ⓒ 퍼시스모어.ALL RIGHTS RESERVED.</span
+            >
+          </div>
+          <div class="rt">
+            <ul>
+              <li><a href="#">서비스이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {

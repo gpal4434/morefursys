@@ -106,7 +106,6 @@ html {
 html,
 body {
   display: block;
-  height: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */

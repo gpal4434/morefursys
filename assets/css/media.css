@@ -48,9 +48,9 @@
   }
   .header .logo {
     position: absolute;
-    top: 0.5rem;
+    top: 50%;
     left: 50%;
-    translate: -50% -0%;
+    translate: -50% -50%;
     width: 90px;
     height: auto;
   }
@@ -132,6 +132,10 @@
   .notice-container .visual-container {
     width: 7rem;
   }
+  .main-banner .swiper-button-next,
+  .main-banner .swiper-button-prev {
+    bottom: 2rem;
+  }
   .notice-container > .inner {
     width: 100%;
     margin: 0;
@@ -204,7 +208,8 @@
 
   /* 고객센터 */
   .qna-container {
-    width: 95%;
+    width: 100%;
+    flex-wrap: wrap;
   }
   .agree-container {
     width: 95%;
@@ -218,5 +223,15 @@
   }
   .bt-btns {
     width: 95%;
+  }
+  .qna-container .qna-item {
+    width: 100%;
+  }
+  .section .section-title > .lg > span {
+    font-size: 2rem;
+  }
+  .section .section-title,
+  .section .section-title > h3 {
+    gap: 0.5rem;
   }
 }

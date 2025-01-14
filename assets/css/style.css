@@ -852,6 +852,10 @@ main > .main-inner.login-container {
 }
 
 /* 마이페이지 */
+.my-info-container {
+  width: 1130px;
+  margin: 0 auto;
+}
 .list .body .row.subject {
   cursor: pointer;
 }
@@ -875,4 +879,123 @@ main > .main-inner.login-container {
   min-width: 150px;
   text-align: center;
   font-weight: bold;
+}
+
+/* 회원가입 */
+.sign-up-container {
+  width: 1028px;
+  margin: 5rem auto;
+  padding: 0 5rem;
+}
+.sign-up-btn {
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  border-radius: 20px;
+  flex: 1;
+  align-items: center;
+}
+.sign-up-btn span {
+  color: #fff;
+}
+.sign-up-btn:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url(../images/sign-up-icon01.png) center / contain no-repeat;
+}
+.sign-up-btn.easy {
+  background-color: var(--surface);
+}
+.sign-up-btn.easy span {
+  color: var(--text);
+}
+.sign-up-btn.easy:before {
+  background: url(../images/sign-up-icon02.png) center / contain no-repeat;
+}
+.sign-up-container .sign-up-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.sign-up-container .sign-up-title h1 {
+  font-size: 2rem;
+}
+.sign-up-container .steps {
+  display: flex;
+  gap: 0.5rem;
+}
+.sign-up-container .step.on span {
+  color: var(--red);
+}
+.sign-up-container .conts {
+  width: 740px;
+  margin: 0 auto;
+}
+.sign-up-container .conts .title-box {
+  margin-bottom: 1rem;
+  margin-top: 6rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.sign-up-container .conts h3 {
+  font-size: 1.5rem;
+}
+.agree-container.sign-up {
+  width: 100%;
+}
+.sign-up-container .conts .box {
+  padding: 5rem;
+  border: 1px solid var(--border);
+  margin: 5rem 0;
+}
+.sign-up-container .conts .box p {
+  text-align: center;
+}
+.sign-up-container .conts .box .ellipsis {
+  color: var(--red);
+  letter-spacing: 10px;
+}
+.sign-up-container .conts .box .lg {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.sign-up-container .youg-people {
+  border: 1px solid var(--border);
+  padding: 1rem;
+}
+.sign-up-container .conts .box .youg-people p {
+  text-align: left;
+}
+
+/* 회원가입 팝업 */
+.modal .sign-up-square {
+  width: 100%;
+  height: 50px;
+}
+.modal .sign-up-square.kakao {
+  background: url(../images/kakao.png) center / contain no-repeat;
+}
+.modal .sign-up-square.naver {
+  background: url(../images/naver.png) center / contain no-repeat;
+}
+.modal .sign-up-square.id {
+  background: url(../images/id.png) center / contain no-repeat;
+}
+.modal .sign-up-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.modal .sign-up-circle.google {
+  background: url(../images/google.png) center / contain no-repeat;
+}
+.modal .sign-up-circle.facebook {
+  background: url(../images/facebook.png) center / contain no-repeat;
+}
+.modal .sign-up-circle.apple {
+  background: url(../images/apple.png) center / contain no-repeat;
 }
