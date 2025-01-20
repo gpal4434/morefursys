@@ -24,6 +24,7 @@
   }
   main > .main-inner {
     width: 100%;
+    padding: 5rem 1rem;
   }
   /* 헤더 */
 
@@ -59,7 +60,7 @@
     top: 100%;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 44px);
+    height: calc(100vh - 43px);
     background: rgba(255, 255, 255, 0.9);
     z-index: 9999;
     transition: all 0.3s;
@@ -216,13 +217,10 @@
   }
   .table th,
   .table td {
-    padding: 5px;
+    padding: 0.5rem;
   }
   .captha-box {
     flex-direction: column;
-  }
-  .bt-btns {
-    width: 95%;
   }
   .qna-container .qna-item {
     width: 100%;
@@ -233,5 +231,131 @@
   .section .section-title,
   .section .section-title > h3 {
     gap: 0.5rem;
+  }
+  .board-detail .head {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+  .customer-container .board-detail {
+    padding: 0;
+  }
+
+  /* 핫딜 */
+  .hot-deal-container .rt .detail {
+    padding: 1rem 0.5rem;
+  }
+  .hot-deal-container .sub-center .cont {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .hot-deal-container .lt,
+  .hot-deal-container .rt {
+    width: 100%;
+  }
+  .hot-deal-container .cart {
+    padding: 1rem 0;
+  }
+  .hot-deal-container .cart .item .amount button,
+  .hot-deal-container .cart .item .amount input {
+    padding: 0.5rem;
+  }
+  .hot-deal-container .cart .item .amount input {
+    width: 30px;
+  }
+  .hot-deal-container .labels {
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+  }
+  .hot-deal-container .label-sm {
+    padding: 1px 2px;
+    font-size: 10px;
+  }
+  .hot-deal-container .lt .img {
+    height: 20rem;
+  }
+
+  /* 사용방법 */
+  .how-to-use-container .steps {
+    flex-wrap: wrap;
+  }
+  .how-to-use-container .steps li {
+    padding: 2rem;
+  }
+  .how-to-use-container .how .monitor,
+  .how-to-use-container .how .monitor .img {
+    width: 100%;
+  }
+  .how-to-use-container .how .monitor {
+    height: 23rem;
+  }
+
+  /* 로그인 */
+  main > .main-inner.login-container {
+    width: 100%;
+  }
+  .login-form > .flex {
+    flex-direction: column;
+  }
+  .login-form .login {
+    width: 100%;
+  }
+  .login-box .btns button {
+    padding: 1rem 0.5rem;
+  }
+  main > .main-inner.login-container {
+    margin: auto;
+  }
+
+  /* 마이페이지 */
+  .my-info-container {
+    width: 100%;
+  }
+  .input-box {
+    flex-direction: column;
+  }
+
+  /* global */
+  .board-detail {
+    padding: 1rem;
+  }
+  .sub-center {
+    width: 100%;
+  }
+  .main-inner > .sections {
+    padding: 0;
+  }
+  .section .section-title > .md > span {
+    font-size: 1.5rem;
+  }
+  .input-sm {
+    width: 4rem;
+    flex: 1;
+  }
+  .input-md {
+    width: 8rem;
+    flex: 1;
+  }
+  .table {
+    table-layout: fixed;
+  }
+
+  /* 회원가입 */
+  .sign-up-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .sign-up-btn {
+    padding: 3rem 1.5rem;
+  }
+  .sign-up-container .conts {
+    width: 100%;
+  }
+  .sign-up-container .conts .title-box {
+    margin-top: 2rem;
+  }
+  .sign-up-container .conts .box {
+    padding: 2rem;
   }
 }

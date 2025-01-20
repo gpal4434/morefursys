@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/media.css" />
     <script src="../js/pagination.js" type="module"></script>
+    <script src="../js/header.js" type="module"></script>
     <title>퍼니시스</title>
   </head>
   <body>
     <div id="wrap">
+      <header-component></header-component>
       <main>
         <div class="main-inner customer-container">
           <div class="tabs-container">
@@ -123,12 +125,14 @@
                 <tr>
                   <th>휴대폰 번호*</th>
                   <td>
-                    <div class="flex g5 al-cnt">
-                      <input type="text" class="input input-sm" />
-                      <span>-</span>
-                      <input type="text" class="input input-sm" />
-                      <span>-</span>
-                      <input type="text" class="input input-sm" />
+                    <div class="input-box">
+                      <div class="input-inputs">
+                        <input type="text" class="input input-sm" />
+                        <span>-</span>
+                        <input type="text" class="input input-sm" />
+                        <span>-</span>
+                        <input type="text" class="input input-sm" />
+                      </div>
                       <button class="btn">본인인증</button>
                     </div>
                     <p class="text-red mt-1">
@@ -140,20 +144,23 @@
                 <tr>
                   <th>이메일 주소*</th>
                   <td>
-                    <div class="flex g5 al-cnt">
-                      <input type="text" class="input input-md" />
-                      <span>@</span>
-                      <input type="text" class="input input-md" />
+                    <div class="input-box">
+                      <div class="input-inputs">
+                        <input type="text" class="input input-md" />
+                        <span>@</span>
+                        <input type="text" class="input input-md" />
+                      </div>
                       <select name="" id="" class="select">
                         <option value="naver.com">네이버</option>
                         <option value="gmail.com">지메일</option>
                       </select>
                     </div>
+
                     <div class="flex g10 mt-1">
                       <p class="text-red">
                         * 이메일로 핀 번호를 받으시겠습니까?
                       </p>
-                      <div class="flex g5 al-cnt">
+                      <div class="flex g5 al-cnt flex-shrink-0">
                         <label for="yes" class="flex al-cnt g5">
                           예
                           <input type="radio" id="yes" name="email" checked />

@@ -7,11 +7,12 @@
     <script src="../src/package/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/media.css" />
-    <script src="../js/pagination.js" type="module"></script>
+    <script src="../js/header.js" type="module"></script>
     <title>퍼니시스</title>
   </head>
   <body>
     <div id="wrap">
+      <header-component></header-component>
       <main>
         <div class="sign-up-container">
           <section class="section">
@@ -43,8 +44,8 @@
               </div>
               <table class="table">
                 <colgroup>
-                  <col width="20%" />
-                  <col width="80%" />
+                  <col width="30%" />
+                  <col width="70%" />
                 </colgroup>
                 <tr>
                   <th class="star">아이디</th>
@@ -73,10 +74,12 @@
                 <tr>
                   <th>이메일 주소</th>
                   <td>
-                    <div class="flex g5 al-cnt">
-                      <input type="text" class="input input-md" />
-                      <span>@</span>
-                      <input type="text" class="input input-md" />
+                    <div class="input-box">
+                      <div class="input-inputs">
+                        <input type="text" class="input input-md" />
+                        <span>@</span>
+                        <input type="text" class="input input-md" />
+                      </div>
                       <select name="" id="" class="select">
                         <option value="naver.com">네이버</option>
                         <option value="gmail.com">지메일</option>
@@ -93,13 +96,15 @@
                 <tr>
                   <th>휴대폰 번호</th>
                   <td>
-                    <div class="flex g5 al-cnt">
-                      <input type="text" class="input input-sm" />
-                      <span>-</span>
-                      <input type="text" class="input input-sm" />
-                      <span>-</span>
-                      <input type="text" class="input input-sm" />
-                      <button class="btn btn-black">본인인증</button>
+                    <div class="input-box">
+                      <div class="input-inputs">
+                        <input type="text" class="input input-sm" />
+                        <span>-</span>
+                        <input type="text" class="input input-sm" />
+                        <span>-</span>
+                        <input type="text" class="input input-sm" />
+                      </div>
+                      <button class="btn">본인인증</button>
                     </div>
 
                     <div class="checkbox mt-1">
@@ -136,8 +141,8 @@
               </div>
               <table class="table">
                 <colgroup>
-                  <col width="20%" />
-                  <col width="80%" />
+                  <col width="30%" />
+                  <col width="70%" />
                 </colgroup>
                 <tr>
                   <th class="star">생년월일</th>

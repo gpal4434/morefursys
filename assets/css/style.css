@@ -36,6 +36,9 @@
 .header .logo {
   width: 129px;
   height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header .logo img {
   width: 100%;
@@ -639,7 +642,15 @@ main > .main-inner {
   line-height: 0.9;
   margin-right: 5px;
 }
+.hot-deal-container .swiper-slide,
+.hot-deal .swiper-slide {
+  cursor: pointer;
+}
 
+.hot-deal .swiper-slide:hover .gift-container,
+.hot-deal-container .swiper-slide:hover .gift-container {
+  border: 1px solid var(--primary);
+}
 .notice-contents-container {
   padding: 3rem;
 }
@@ -723,34 +734,25 @@ main > .main-inner {
   display: inline-block;
   width: 611px;
   height: 522px;
-  background: url("../images/monitor.png") center / contain no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
-}
-.how-to-use-container .how.phone .monitor {
-  background: none;
-}
-.how-to-use-container .how .monitor .img {
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  translate: -50% 0;
-  width: 585px;
-  height: 330px;
 }
 .how-to-use-container .how.phone .monitor .img {
   width: 224px;
   height: 451px;
 }
-.how-to-use-container .how:nth-child(1) .monitor .img {
+.how-to-use-container .how:nth-child(1) .monitor {
   background-image: url(../images/capture01.png);
 }
-.how-to-use-container .how:nth-child(2) .monitor .img {
+.how-to-use-container .how:nth-child(2) .monitor {
   background-image: url(../images/capture02.png);
 }
-.how-to-use-container .how:nth-child(3) .monitor .img {
+.how-to-use-container .how:nth-child(3) .monitor {
   background-image: url(../images/capture03.png);
 }
-.how-to-use-container .how:nth-child(4) .monitor .img {
+.how-to-use-container .how:nth-child(4) .monitor {
   background-image: url(../images/capture04.png);
 }
 
@@ -880,6 +882,15 @@ main > .main-inner.login-container {
   text-align: center;
   font-weight: bold;
 }
+.input-box {
+  display: flex;
+  gap: 5px;
+}
+.input-inputs {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 
 /* 회원가입 */
 .sign-up-container {
@@ -938,8 +949,6 @@ main > .main-inner.login-container {
 .sign-up-container .conts .title-box {
   margin-bottom: 1rem;
   margin-top: 6rem;
-  padding: 1rem;
-  border-bottom: 1px solid var(--border);
 }
 .sign-up-container .conts h3 {
   font-size: 1.5rem;
@@ -959,7 +968,8 @@ main > .main-inner.login-container {
   color: var(--red);
   letter-spacing: 10px;
 }
-.sign-up-container .conts .box .lg {
+.sign-up-container .conts .box .lg,
+.sign-up-container .conts .box .lg span {
   font-size: 20px;
   margin-top: 1rem;
 }

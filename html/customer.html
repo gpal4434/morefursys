@@ -7,59 +7,13 @@
     <script src="../src/package/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/media.css" />
+    <script src="../js/header.js" type="module"></script>
     <script src="../js/pagination.js" type="module"></script>
     <title>퍼니시스</title>
   </head>
   <body>
     <div id="wrap">
-      
-      <header class="header">
-        <div class="header-inner">
-          <button class="menu mobile"></button>
-          <a href="/" class="logo">
-            <img src="../assets/images/logo.png" alt="logo" />
-          </a>
-          <nav>
-            <div class="intro mobile">
-              <p>안녕하세요!<br />상품권 최고 매입 퍼시스모어입니다.</p>
-
-              <div class="btn-box mobile flex">
-                <button>로그인</button>
-                <button class="sign-up">회원가입</button>
-              </div>
-            </div>
-            <ul class="nav-list">
-              <li data-href="/html/hotDeal.html">
-                <span>핫딜</span>
-              </li>
-              <li data-href="/html/notice.html">
-                <span>공지사항</span>
-              </li>
-              <li data-href="/html/status.html">
-                <span>실시간 매입 현황</span>
-              </li>
-              <li data-href="/html/customer.html"><span>고객센터</span></li>
-            </ul>
-            <footer class="mobile">
-              <div class="inner">
-                <div class="lt">
-                  <div class="contact-info">
-                    <span>010-1234-1233</span>
-                    <span>상담 가능 시간 AM 09:00 ~ PM 11:00</span>
-                  </div>
-                  <span class="text-gray"
-                    >COPYRIGHT ⓒ 퍼시스모어.ALL RIGHTS RESERVED.</span
-                  >
-                </div>
-              </div>
-            </footer>
-          </nav>
-          <div class="btn-box pc flex">
-            <button>로그인</button>
-            <button class="sign-up">회원가입</button>
-          </div>
-        </div>
-      </header>
+      <header-component></header-component>
       <main>
         <div class="main-inner customer-container">
           <div class="tabs-container">
